@@ -22,4 +22,4 @@ let turn = 0
 let speed = 0
 DFRobotMaqueenPlusV2.init()
 speed = 50
-turn = 10
+turn = 25
