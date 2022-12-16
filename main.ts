@@ -8,10 +8,10 @@ DFRobotMaqueenPlusV2.onIrDatagram(function (message) {
     }
     if (message == 20) {
         DFRobotMaqueenPlusV2.controlMotor(MyEnumMotor.eLeftMotor, MyEnumDir.eForward, speed)
-        DFRobotMaqueenPlusV2.controlMotor(MyEnumMotor.eRightMotor, MyEnumDir.eForward, speed / turn)
+        DFRobotMaqueenPlusV2.controlMotor(MyEnumMotor.eRightMotor, MyEnumDir.eForward, turn)
     }
     if (message == 22) {
-        DFRobotMaqueenPlusV2.controlMotor(MyEnumMotor.eLeftMotor, MyEnumDir.eForward, speed / turn)
+        DFRobotMaqueenPlusV2.controlMotor(MyEnumMotor.eLeftMotor, MyEnumDir.eForward, turn)
         DFRobotMaqueenPlusV2.controlMotor(MyEnumMotor.eRightMotor, MyEnumDir.eForward, speed)
     }
     if (message == 16) {
@@ -22,4 +22,4 @@ let turn = 0
 let speed = 0
 DFRobotMaqueenPlusV2.init()
 speed = 50
-turn = 4
+turn = 10
